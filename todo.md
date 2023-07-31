@@ -5,6 +5,11 @@ Find your next movie or create your watchlist with this App. It include reviews,
 - This application will help users find their next movie to watch by showing helpful stats
 - Resource needed for the project is movie api, examples include Imdb, MovieDB etc.
 
+# Website parts
+
+- [x] header
+- [ ] content section
+
 ## User Stories
 
 - [ ] User can see all the latest movie on the front page
