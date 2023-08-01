@@ -2,7 +2,7 @@ import React from 'react';
 
 const Nav = (): React.JSX.Element => {
   return (
-    <nav className="bg-slate-700 w-full flex mb-10 justify-between items-center lg:px-20 p-6">
+    <nav className="w-full flex mb-10 justify-between items-center lg:px-20 p-6">
       <div className="flex text-white">
         <h1 className="text-3xl mr-1 cursor-pointer">Movies</h1>
         <h1 className="text-lg cursor-pointer">Viewer</h1>
