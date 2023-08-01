@@ -2,10 +2,11 @@
 import { useEffect, useState } from 'react';
 import { options } from '@/utils/utils';
 import MoviesCard from '@/components/MoviesCard';
+import { IMovie } from '@/utils/interface';
 
 const Home = () => {
   const url = 'https://api.themoviedb.org/3/discover/movie';
-  const [movies, setMovies]: any = useState([]);
+  const [movies, setMovies] = useState<IMovie[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,12 +27,12 @@ const Home = () => {
   return (
     <div className="px-20 flex flex-wrap text-white text-sm p-20 gap-10">
       {movies &&
-        movies.map((movie: any) => (
+        movies.map((movie: IMovie) => (
           <MoviesCard
             key={movie.id}
+            id={movie.id}
             title={movie.original_title}
             releaseDate={movie.release_date}
-            overview={movie.overview}
             posterUrl={movie.poster_path}
             rating={movie.vote_average}
           />
